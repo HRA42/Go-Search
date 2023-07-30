@@ -11,6 +11,14 @@
       "restartOn": {
         "files": ["./main.go"]
       }
+    },
+    "go test": {
+      "name": "test",
+      "command": "go test main_test.go",
+      "runAtStart": false,
+      "restartOn": {
+        "files": ["./main_test.go"]
+      }
     }
   }
 }
