@@ -1,13 +1,12 @@
 package sortarray
 
-// Implements Merge Sort in case the data must be sorted (e.g. bin search)
+// Sort implements Merge Sort in case the data must be sorted (e.g. bin search)
 func Sort(arr []int) []int {
 	if len(arr) <= 1 {
 		return arr
 	}
 
 	mid := len(arr) / 2
-
 	left := Sort(arr[:mid])
 	right := Sort(arr[mid:])
 
