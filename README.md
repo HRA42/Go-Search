@@ -53,7 +53,7 @@ each playing a pivotal role in keeping the audience, which is your software syst
 
 You can run this Repo in Codesandbox!  
   
-[![Edit in CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)]()
+[![Edit in CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/github/HRA42/go-search)
 
 ---
 
@@ -62,11 +62,17 @@ You can run this Repo in Codesandbox!
 ### run main.go
 
 ```bash
-go run main.go
+go run cmd/go-search/main.go
+```
+
+### run unit test
+
+```bash
+go test -v tests/main_test.go
 ```
 
 ### run benchmark
 
 ```bash
-go test -benchmem -run=^$ -bench ^Benchmark_createArray$
+go test -bench=. tests/main_test.go
 ```
