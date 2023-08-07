@@ -1,7 +1,4 @@
 # Go Search
-
-# Go Sort
-
 ## Overview
 
 This Repo shows different search algorithms implemented in Golang.  
