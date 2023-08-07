@@ -19,9 +19,6 @@ The main package does implement call for every package that in this module:
 ### Benchmark
 The benchmark file `tests/main_test.go` does the same, but run with the input cases:
 
-> [!WARNING]  
-> For some sorting algorithms It's impossible to get a successful run (e.g. Bubble Sort)!
-
 1. 10
 2. 100
 3. 1000
