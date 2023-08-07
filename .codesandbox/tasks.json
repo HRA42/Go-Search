@@ -12,9 +12,17 @@
         "files": ["cmd/go-search/main.go"]
       }
     },
+    "go bench": {
+      "name": "benchmark",
+      "command": "go test -bench=. tests/main_test.go",
+      "runAtStart": false,
+      "restartOn": {
+        "files": ["tests/main_test.go"]
+      }
+    },
     "go test": {
       "name": "test",
-      "command": "go test tests/main_test.go",
+      "command": "go test -v tests/main_test.go",
       "runAtStart": false,
       "restartOn": {
         "files": ["tests/main_test.go"]
